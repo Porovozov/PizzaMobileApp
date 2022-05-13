@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:pizzamodels/constants/colors.dart';
 import 'package:pizzamodels/models/restaurant.dart';
@@ -23,9 +24,19 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar(
-            Icons.arrow_back_ios_outlined,
-            Icons.add,
+          // CustomAppBar(Icons.arrow_back_ios_outlined, Icons.add),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              SizedBox(
+                height: 25,
+                width: 120,
+              ),
+              Icon(Icons.add),
+            ],
           ),
           RestaurantInfo(),
           FoodList(selected, (int index) {

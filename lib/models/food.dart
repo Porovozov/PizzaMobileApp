@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class Food {
   String imgUrl;
   String desc;
@@ -17,12 +19,12 @@ class Food {
     return [
       Food(
           'assets/the-pizza-g.png',
-          'No1. In Sales',
+          '№1. В меню!',
           'Pizza Clasic',
-          '50 min',
+          '10 min',
           4.8,
           '325 kcal',
-          8,
+          250,
           1,
           [
             {'Тесто': 'assets/knead.png'},
@@ -33,48 +35,50 @@ class Food {
               'Грибы': 'assets/mushrooms.png',
             },
             {
+              'Солями': 'assets/premium.png',
+            },
+            {
               'Помидоры': 'assets/tomato.png',
             },
           ],
           'Пицца с грибами — один из самых популярных вариантов этого замечательного блюда как в самой Италии, так и во всем остальном мире. Традиционно для начинки используются шампиньоны, выращенные «в неволе». И это действительно отличный выбор, так как они готовятся очень быстро (кстати, их вообще можно есть в сыром виде!) и идеально сочетаются как с томатным соусом, так и с сыром. Сделать вкус грибов более выразительным можно с помощью пряных трав: орегано или чабреца. Да и наша родная петрушка тоже вполне подойдет! В начинку пряные травы лучше добавить в сушеном виде, а вот уже готовую пиццу с грибами можно украсить их свежими листочками.',
           hihtlight: true),
       Food(
-          'assets/pizza.png',
-          'No1. In Sales',
-          'MAcarella',
-          '50 min',
+          'assets/pz2.png',
+          'Остренько',
+          'Пепперони',
+          '10 min',
           4.8,
           '325 kcal',
-          16,
+          350,
           1,
           [
+            {'Тесто': 'assets/knead.png'},
             {
-              'Noodle': 'assets/pizza.png',
+              'Сыр': 'assets/cheese.png',
             },
             {
-              'Shrimp': 'assets/pizza.png',
+              'Солями': 'assets/premium.png',
             },
           ],
-          'Simply text loooooooooooooooooL',
+          'Пикантная пепперони, увеличенная порция моцареллы, томатный соус',
           hihtlight: true),
       Food(
-          'assets/pizza.png',
-          'No1. In Sales',
-          'umy',
+          'assets/pz3.png',
+          'Выбор гурманов',
+          'Сырная',
           '50 min',
           4.8,
           '325 kcal',
-          12,
+          450,
           1,
           [
+            {'Тесто': 'assets/knead.png'},
             {
-              'Noodle': 'assets/pizza.png',
-            },
-            {
-              'Shrimp': 'assets/pizza.png',
+              'Сыр': 'assets/cheese.png',
             },
           ],
-          'Simply text loooooooooooooooooL',
+          'Сыр моцарелла, сыр слугуни, сливочный соус, яйцо куриное, орегано, чесночное масло',
           hihtlight: true),
     ];
   }
@@ -82,42 +86,60 @@ class Food {
   static List<Food> generatePopularFood() {
     return [
       Food(
-          'assets/pizza.png',
-          'No1. In Sales',
-          'umy',
-          '50 min',
+          'assets/pz2.png',
+          'Остренько',
+          'Пепперони',
+          '10 min',
           4.8,
           '325 kcal',
-          12,
+          350,
           1,
           [
+            {'Тесто': 'assets/knead.png'},
             {
-              'Noodle': 'assets/pizza.png',
+              'Сыр': 'assets/cheese.png',
             },
             {
-              'Shrimp': 'assets/pizza.png',
+              'Помидоры': 'assets/tomato.png',
             },
           ],
-          'Simply text loooooooooooooooooL',
+          'Пикантная пепперони, увеличенная порция моцареллы, томатный соус',
           hihtlight: true),
       Food(
-          'assets/pizza.png',
-          'No1. In Sales',
-          'Sobba POOP',
+          'assets/pz3.png',
+          'Выбор гурманов',
+          'Сырная',
           '50 min',
           4.8,
           '325 kcal',
-          12,
+          450,
           1,
           [
+            {'Тесто': 'assets/knead.png'},
             {
-              'Noodle': 'assets/pizza.png',
-            },
-            {
-              'Shrimp': 'assets/pizza.png',
+              'Сыр': 'assets/cheese.png',
             },
           ],
-          'Simply text loooooooooooooooooL',
+          'Сыр моцарелла, сыр слугуни, сливочный соус, яйцо куриное, орегано, чесночное масло',
+          hihtlight: true),
+    ];
+  }
+
+  static List<Food> Pizza() {
+    return [
+      Food(
+          'assets/wall-clock.png',
+          '',
+          'Здесь пока пусто',
+          '',
+          0,
+          '',
+          0,
+          0,
+          [
+            {'Всё ещё пусто :(': 'assets/wall-clock.png'}
+          ],
+          'Попозже что-нибудь придумаем...',
           hihtlight: true),
     ];
   }

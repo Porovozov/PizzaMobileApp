@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
           children: [
             CustomAppBar(
               Icons.arrow_back_ios_new_outlined,
-              Icons.favorite_border,
+              Icons.add,
               leftCallback: () => Navigator.of(context).pop(),
             ),
             FoodImg(food),

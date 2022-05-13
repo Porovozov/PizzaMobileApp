@@ -22,6 +22,12 @@ class CustomAppBar extends StatelessWidget {
             child: _buildIcon(leftIcon),
           ),
           GestureDetector(
+            onTap: () {
+              //nfix in home
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => FoodAddPage(),
+              ));
+            },
             child: _buildIcon(rightIcon),
           ),
         ],

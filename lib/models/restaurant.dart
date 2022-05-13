@@ -29,9 +29,9 @@ class Restaurant {
       'Orange sandwitch - original \nsandwitch',
       4.7,
       {
-        'Recommend': Food.generateRecommendFood(),
-        'Popular': Food.generatePopularFood(),
-        'Pizza': [],
+        'Рекомендуем': Food.generateRecommendFood(),
+        'Популярное': Food.generatePopularFood(),
+        'Блюдо дня': Food.Pizza(),
       },
     );
   }

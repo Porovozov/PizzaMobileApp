@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pizzamodels/constants/colors.dart';
 import 'package:pizzamodels/models/restaurant.dart';

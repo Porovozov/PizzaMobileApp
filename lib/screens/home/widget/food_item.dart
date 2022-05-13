@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pizzamodels/constants/colors.dart';
 import 'package:pizzamodels/models/food.dart';
 
 class FoodItem extends StatelessWidget {
@@ -66,10 +65,10 @@ class FoodItem extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '\$',
+                    '\₽',
                     style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ],
